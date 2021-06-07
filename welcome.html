@@ -1,0 +1,177 @@
+<! -- Author: Athenkosi Zono (218030185) -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Welcome</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>  
+		<div class="container">
+			<div class="nav-wrapper">
+				<div class="left-side">
+					<div class="nav-link-wrapper">
+						<a href="welcome.html">Home</a>
+					</div>
+					
+					<div class="nav-link-wrapper">
+						<a href="about.html">About</a>
+					</div>
+
+                    <div class="nav-link-wrapper">
+						<a href="login.html">Login</a>
+					</div>
+					
+					<div class="nav-link-wrapper">
+						<a href="register.html">Register</a>
+					</div>
+				</div>
+				
+				<div class="right-side">
+					<div class="brand">
+						<div>THE STATIONARY GRAB</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content-wrapper">
+				<div class="portfolio-items-wrapper">
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(data/book.jpg)"></div>
+						
+						<div class="img-text-wrapper">
+							<div class="logo-wrapper">
+								<img src="images/logo.png">
+							</div>
+							
+							<div class="subtitle-wrapper">
+								Database Systems 3 Book
+                                R 350
+                                From user: @21822022
+							</div>
+						</div>
+					</div>
+					
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(data/cellphone.jpg)"></div>
+						<div class="img-text-wrapper">
+							<div class="logo-wrapper">
+								<img src="images/logo.png">
+							</div>
+							
+							<div class="subtitle-wrapper">
+								iPhone 33 Second hand
+                                R 6150
+                                From user: @2157889844
+							</div>
+						</div>
+					</div>
+					
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(data/gown.jpeg)"></div>
+						<div class="img-text-wrapper">
+							<div class="logo-wrapper">
+								<img src="images/logo.png">
+							</div>
+							
+							<div class="subtitle-wrapper">
+								Graduation Gown
+                                R 990
+                                From user: @21678655
+							</div>
+						</div>
+					</div>
+					
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(data/laptop.jpg)"></div>
+						<div class="img-text-wrapper">
+							<div class="logo-wrapper">
+								<img src="images/logo.png">
+							</div>
+							
+							<div class="subtitle-wrapper">
+								Lenovo Laptop 4GB Memory
+                                500 GB Storage
+                                R 3588
+                                From user: @218036558
+							</div>
+						</div>
+					</div>
+					
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(data/microwave.jpg)"></div>
+						<div class="img-text-wrapper">
+							<div class="logo-wrapper">
+								<img src="images/logo.png">
+							</div>
+							
+							<div class="subtitle-wrapper">
+								Microwave Oven self timer
+                                R 750
+                                From user: @21569888
+							</div>
+						</div>
+					</div>
+					
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(data/stationary.jpg)"></div>
+						<div class="img-text-wrapper">
+							<div class="logo-wrapper">
+								<img src="images/logo.png">
+							</div>
+							
+							<div class="subtitle-wrapper">
+								All sorts of stationary
+                                R 70 per pack
+                                From user: @21921551515
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+		</div>
+        
+	</body>
+    <footer>
+        <hr>
+        <p justify-content: center;>REGISTER AND LOG IN TO VIEW MORE</p>
+        </footer>
+	
+	<script>
+		const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+		portfolioItems.forEach(portfolioItem => {
+			portfolioItem.addEventListener('mouseover', () => {
+				portfolioItem.childNodes[1].classList.add('img-darken');
+			})
+			
+			portfolioItem.addEventListener('mouseout', () => {
+				portfolioItem.childNodes[1].classList.remove('img-darken');
+			})
+		})
+	</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
